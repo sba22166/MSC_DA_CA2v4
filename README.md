@@ -33,4 +33,3 @@ The results of the analysis must be presented in the form of a project report. T
 Note that MapReduce-style processing in this instance is considered to include platforms such as Apache Spark.
 Marks and feedback will be provided for each module separately based upon the learning outcomes for each of the modules.  
 All documentation, code, examples, and any other files MUST be evidenced in your Version Control repository. (Git or Similar) using your CCT email address ONLY. Your repository MUST show your continual development of the project throughout its lifecycle and include notes detailing progress at each commit.
-![image](https://user-images.githubusercontent.com/120040771/236909334-f3938219-142e-47e4-b679-7fc8d7cdc39a.png)
