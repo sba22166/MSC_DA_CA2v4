@@ -1,0 +1,26 @@
+YCSB Testing Strategy:
+
+- Change the count to 10000 records and operations
+
+sed -i 's/recordcount=1000/recordcount=10000/g; s/operationcount=1000/operationcount=10000/g' workload[a-e]
+
+
+- Run each mysql test, outputting the results to yscb-results folder
+
+
+./bin/ycsb.sh load jdbc -P ./jdbc-binding/conf/db.properties -P workloads/workloada > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mysql-workloada.txt
+./bin/ycsb.sh load jdbc -P ./jdbc-binding/conf/db.properties -P workloads/workloadb > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mysql-workloadb.txt
+./bin/ycsb.sh load jdbc -P ./jdbc-binding/conf/db.properties -P workloads/workloadc > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mysql-workloadc.txt
+./bin/ycsb.sh load jdbc -P ./jdbc-binding/conf/db.properties -P workloads/workloadd > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mysql-workloadd.txt
+./bin/ycsb.sh load jdbc -P ./jdbc-binding/conf/db.properties -P workloads/workloade > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mysql-workloade.txt
+
+- Run each mongodb test, outputting the results to yscb-results folder
+
+/bin/ycsb.sh load mongodb -s -P  workloads/workloada > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mongo-workloada.txt
+/bin/ycsb.sh load mongodb -s -P  workloads/workloadb > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mongo-workloadb.txt
+/bin/ycsb.sh load mongodb -s -P  workloads/workloadc > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mongo-workloadc.txt
+/bin/ycsb.sh load mongodb -s -P  workloads/workloadd > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mongo-workloadd.txt
+/bin/ycsb.sh load mongodb -s -P  workloads/workloade > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mongo-workloade.txt
+
+
+- Conduct Analysis on each result and compare both DB's
