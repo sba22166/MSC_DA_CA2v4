@@ -9,9 +9,9 @@ Due Date 26th May 2023 11:55
 
 Requirements:
 
-1 Year of tweets 
+	1 Year of tweets 
 
- Utilisation of a distributed data processing environment (e.g., Hadoop Map-reduce or Spark), for some part of the analysis.
+ 	Utilisation of a distributed data processing environment (e.g., Hadoop Map-reduce or Spark), for some part of the analysis.
 
 	Source dataset(s) can be stored into an appropriate SQL/ NoSQL database(s) prior to processing by MapReduce / Spark (HBase / HIVE / Spark SQL /Cassandra / MongoDB / etc.) The data can be populated into the NoSQL database using an appropriate tool (Hado Sop/ Spark etc.)
 
@@ -23,6 +23,6 @@ Requirements:
 
 	Provide evidence and justification of your choice of sentiment extraction.
 
-Explore time-series forecasting and evidence and justify your choices and final analysis including your forecasts at  1 week, 1 month and 3 months.
+ 	Explore time-series forecasting and evidence and justify your choices and final analysis including your forecasts at  1 week, 1 month and 3 months.
 
-Your dashboard must be dynamic and interactive. Include your design rationale.
+	Your dashboard must be dynamic and interactive. Include your design rationale.
