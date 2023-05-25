@@ -2,11 +2,24 @@ YCSB Testing Strategy:
 
 - Change the count to 10000 records and operations
 
+
 sed -i 's/recordcount=1000/recordcount=10000/g; s/operationcount=1000/operationcount=10000/g' workload[a-e]
 
 
-- Run each mysql test, outputting the results to yscb-results folder
 
+
+
+- After each test, need to delete the data each time
+
+
+
+hduser@muhammad-Vm:~/ycsb-0.17.0$ mysql -uroot -p
+Enter password: 
+mysql> use BenchTest;
+mysql> delete from usertable;
+
+
+- Run each mysql test, outputting the results to yscb-results folder
 
 ./bin/ycsb.sh load jdbc -P ./jdbc-binding/conf/db.properties -P workloads/workloada > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mysql-workloada.txt
 ./bin/ycsb.sh load jdbc -P ./jdbc-binding/conf/db.properties -P workloads/workloadb > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mysql-workloadb.txt
