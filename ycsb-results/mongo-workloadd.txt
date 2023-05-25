@@ -1,0 +1,26 @@
+/usr/bin/java  -classpath /home/hduser/ycsb-0.17.0/conf:/home/hduser/ycsb-0.17.0/lib/HdrHistogram-2.1.4.jar:/home/hduser/ycsb-0.17.0/lib/core-0.17.0.jar:/home/hduser/ycsb-0.17.0/lib/htrace-core4-4.1.0-incubating.jar:/home/hduser/ycsb-0.17.0/lib/jackson-core-asl-1.9.4.jar:/home/hduser/ycsb-0.17.0/lib/jackson-mapper-asl-1.9.4.jar:/home/hduser/ycsb-0.17.0/mongodb-binding/lib/logback-classic-1.1.2.jar:/home/hduser/ycsb-0.17.0/mongodb-binding/lib/logback-core-1.1.2.jar:/home/hduser/ycsb-0.17.0/mongodb-binding/lib/mongo-java-driver-3.8.0.jar:/home/hduser/ycsb-0.17.0/mongodb-binding/lib/mongodb-async-driver-2.0.1.jar:/home/hduser/ycsb-0.17.0/mongodb-binding/lib/mongodb-binding-0.17.0.jar:/home/hduser/ycsb-0.17.0/mongodb-binding/lib/slf4j-api-1.7.25.jar:/home/hduser/ycsb-0.17.0/mongodb-binding/lib/snappy-java-1.1.7.1.jar site.ycsb.Client -load -db site.ycsb.db.MongoDbClient -s -P workloads/workloadd
+mongo client connection created with mongodb://localhost:27017/ycsb?w=1
+[OVERALL], RunTime(ms), 5013
+[OVERALL], Throughput(ops/sec), 1994.8134849391581
+[TOTAL_GCS_Copy], Count, 10
+[TOTAL_GC_TIME_Copy], Time(ms), 24
+[TOTAL_GC_TIME_%_Copy], Time(%), 0.47875523638539796
+[TOTAL_GCS_MarkSweepCompact], Count, 0
+[TOTAL_GC_TIME_MarkSweepCompact], Time(ms), 0
+[TOTAL_GC_TIME_%_MarkSweepCompact], Time(%), 0.0
+[TOTAL_GCs], Count, 10
+[TOTAL_GC_TIME], Time(ms), 24
+[TOTAL_GC_TIME_%], Time(%), 0.47875523638539796
+[CLEANUP], Operations, 1
+[CLEANUP], AverageLatency(us), 1874.0
+[CLEANUP], MinLatency(us), 1874
+[CLEANUP], MaxLatency(us), 1874
+[CLEANUP], 95thPercentileLatency(us), 1874
+[CLEANUP], 99thPercentileLatency(us), 1874
+[INSERT], Operations, 10000
+[INSERT], AverageLatency(us), 382.4652
+[INSERT], MinLatency(us), 106
+[INSERT], MaxLatency(us), 184959
+[INSERT], 95thPercentileLatency(us), 499
+[INSERT], 99thPercentileLatency(us), 7627
+[INSERT], Return=OK, 10000

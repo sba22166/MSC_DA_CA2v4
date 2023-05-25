@@ -29,6 +29,13 @@ mysql> delete from usertable;
 
 - Run each mongodb test, outputting the results to yscb-results folder
 
+
+- Also delete entries in mongodb before and after each test
+> use ycsb
+
+db.usertable.deleteMany({});
+
+
 /bin/ycsb.sh load mongodb -s -P  workloads/workloada > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mongo-workloada.txt
 /bin/ycsb.sh load mongodb -s -P  workloads/workloadb > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mongo-workloadb.txt
 /bin/ycsb.sh load mongodb -s -P  workloads/workloadc > /home/hduser/Documents/GitHub/MSC_DA_CA2v4/ycsb-results/mongo-workloadc.txt
